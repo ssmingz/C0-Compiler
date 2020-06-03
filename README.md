@@ -56,3 +56,7 @@ Intermediate code generation
 
 ### STAGE2
 Static syntax check
+
+## To Solve
+- negative integer
+- check "array out of bounds" when the index is an expression
