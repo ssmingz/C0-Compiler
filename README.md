@@ -22,4 +22,4 @@ Build AST
 Static syntax check
 
 ### STAGE3
-AST to midcode(haven't finished yet...)
+Intermediate code generation
