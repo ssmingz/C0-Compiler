@@ -19,6 +19,7 @@
 #define RETURN_FUNCDEF_ERROR 14
 #define VOID_RETURN_ERROR 15
 #define ARRAY_INDEX_ERROR 16
+#define TAC_ERROR 17
 
 extern int errorNum;
 
