@@ -4,6 +4,7 @@
 #include "error.h"
 #include "scanner.h"
 #include "symbolTable.h"
+#include "tacgen.h"
 #include <string>
 #include <vector>
 #include <fstream>
@@ -15,6 +16,7 @@ class SymbolTable;
 
 extern Scanner::Token token; // current token
 extern SymbolTable symTable;
+extern TAC tac;
 
 const unordered_map <string, char> TOKEN_ESCAPE_STRING_TO_CHAR{
 			{"\\a", '\a'},
@@ -119,6 +121,7 @@ public:
 	Scanner scanner;
 	TreeNode* syntaxTree;
 	SymbolTable symTable;
+	TAC tac;
 	Parser(const string& filename);
 	string traversingTree2str(Parser::TreeNode* a);
 	void printSyntaxTree(Parser::TreeNode* tree);
