@@ -22,11 +22,13 @@ int main()
     Parser parser(str);
     parser.syntaxTree = parser.parseProgram();
     if (!hasError()) {
-        parser.printSyntaxTree(parser.syntaxTree);
+        //parser.printSyntaxTree(parser.syntaxTree);
         Analyzer analyzer(parser.syntaxTree, parser.symTable);
         analyzer.checkStatement(analyzer.tree);
-        parser.symTable.printGlobalSymbolTable();
-        parser.symTable.printLocalSymbolTable();
+        //parser.symTable.printGlobalSymbolTable();
+        //parser.symTable.printLocalSymbolTable();
+        //parser.tac.DisplayAllQuads();
+        parser.tac.OutputTAC();
     }
     return 0;
 }
