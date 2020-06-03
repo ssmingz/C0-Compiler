@@ -79,5 +79,8 @@ void error(int errorType, int line) {
 		cerr << "line " << line << ": index of array out of boundary" << endl;
 		errorNum++;
 		break;
+	case 17:
+		cerr << "undefined midcode instruction" << endl;
+		break;
 	}
 }
